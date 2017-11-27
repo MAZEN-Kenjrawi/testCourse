@@ -67,8 +67,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
 		$this->assertArrayHasKey('full_name', $emailVariables);
 		$this->assertArrayHasKey('email', $emailVariables);
 
-
+		$this->assertEquals('Mazen Kenjrawi', $emailVariables['full_name']);
+		$this->assertEquals('mazen270@hotmail.com', $emailVariables['email']);
 	}
-
-
 }	
